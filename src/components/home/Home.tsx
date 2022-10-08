@@ -7,11 +7,15 @@ import MonitorIcon from "@mui/icons-material/Monitor";
 import LineStyleIcon from "@mui/icons-material/LineStyle";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
-import Matrix from "./Matrix.jpg";
+import Matrix from "./images/Matrix.jpg";
+import Mobile from "./images/mobile.jpg";
+import Codigo from "./images/codigo.jpg";
+import Machine from "./images/machine.jpg";
 
 import Cabecalho from "../cabecalho/Cabecalho";
 import Icones from "../icones/Icones";
 import { IconesStyleDivMae } from "../icones/IconesStyle";
+import Corpo from "../corpo/Corpo";
 
 function Home() {
   return (
@@ -38,6 +42,57 @@ function Home() {
           texto="Estamos no caminho."
         />
       </IconesStyleDivMae>
+      <Corpo
+        lado="right"
+        imagem={Mobile}
+        alt="mobile"
+        textoSpan="Lorem Ipsum"
+        texto="Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Suscipit vitae labore pariatur
+            laudantium! Doloribus neque placeat vel, aliquam nulla quos amet,
+            non, illum porro esse corporis mollitia! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quidem pariatur doloremque consectetur
+            iusto incidunt porro dolore est vero, voluptatibus ab tenetur?
+            Dolorem autem eos numquam adipisci tenetur iste, facere nihil.Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit.Suscipit vitae
+            labore pariatur laudantium! Doloribus neque placeat vel, aliquam
+            nulla quos amet, non, illum porro esse corporis mollitia! Lorem
+            ipsum dolor sit amet consectetur adipisicing elit."
+      />
+      <Corpo
+        lado="left"
+        alt="mobile"
+        textoSpan="Lorem Ipsum"
+        texto="Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Suscipit vitae labore pariatur
+            laudantium! Doloribus neque placeat vel, aliquam nulla quos amet,
+            non, illum porro esse corporis mollitia! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quidem pariatur doloremque consectetur
+            iusto incidunt porro dolore est vero, voluptatibus ab tenetur?
+            Dolorem autem eos numquam adipisci tenetur iste, facere nihil.Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit.Suscipit vitae
+            labore pariatur laudantium! Doloribus neque placeat vel, aliquam
+            nulla quos amet, non, illum porro esse corporis mollitia! Lorem
+            ipsum dolor sit amet consectetur adipisicing elit."
+        imagem={Codigo}
+      />
+      <Corpo
+        lado="right"
+        alt="mobile"
+        textoSpan="Lorem Ipsum"
+        texto="Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Suscipit vitae labore pariatur
+            laudantium! Doloribus neque placeat vel, aliquam nulla quos amet,
+            non, illum porro esse corporis mollitia! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quidem pariatur doloremque consectetur
+            iusto incidunt porro dolore est vero, voluptatibus ab tenetur?
+            Dolorem autem eos numquam adipisci tenetur iste, facere nihil.Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit.Suscipit vitae
+            labore pariatur laudantium! Doloribus neque placeat vel, aliquam
+            nulla quos amet, non, illum porro esse corporis mollitia! Lorem
+            ipsum dolor sit amet consectetur adipisicing elit."
+        imagem={Machine}
+      />
     </div>
   );
 }

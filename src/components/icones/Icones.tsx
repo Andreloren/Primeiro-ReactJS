@@ -11,11 +11,9 @@ interface IconesProps {
 const Icones: React.FC<IconesProps> = ({ icone, titulo, texto }) => {
   return (
     <IconesStyle>
-      <div>
-        <SvgIcon component={icone} fontSize="large" color="primary" />
-        <h3>{titulo}</h3>
-        <p>{texto}</p>
-      </div>
+      <SvgIcon component={icone} fontSize="large" color="primary" />
+      <h3>{titulo}</h3>
+      <p>{texto}</p>
     </IconesStyle>
   );
 };
