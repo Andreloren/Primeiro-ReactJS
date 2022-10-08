@@ -6,16 +6,21 @@ import "@fontsource/roboto/700.css";
 import MonitorIcon from "@mui/icons-material/Monitor";
 import LineStyleIcon from "@mui/icons-material/LineStyle";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 import Matrix from "./images/Matrix.jpg";
 import Mobile from "./images/mobile.jpg";
 import Codigo from "./images/codigo.jpg";
 import Machine from "./images/machine.jpg";
+import MatrixCheia from "./images/MatrizCheia.jpg";
 
 import Cabecalho from "../cabecalho/Cabecalho";
 import Icones from "../icones/Icones";
 import { IconesStyleDivMae } from "../icones/IconesStyle";
 import Corpo from "../corpo/Corpo";
+import RodapeTotal from "../rodape/Rodape";
 
 function Home() {
   return (
@@ -92,6 +97,19 @@ function Home() {
             nulla quos amet, non, illum porro esse corporis mollitia! Lorem
             ipsum dolor sit amet consectetur adipisicing elit."
         imagem={Machine}
+      />
+      <RodapeTotal
+        imagem={MatrixCheia}
+        alt="Matrix Cheia"
+        texto="Contato"
+        textoSpan1="About"
+        textoSpan2="Contact"
+        textoSpan3="Terms of Use"
+        textoSpan4="Privacy Policy"
+        TextoH6="© Your Website 2020. All Rights Reserved."
+        icone1={FacebookIcon}
+        icone2={TwitterIcon}
+        icone3={InstagramIcon}
       />
     </div>
   );
