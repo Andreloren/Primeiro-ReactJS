@@ -28,7 +28,7 @@ const CorpoStyle = styled.div`
 
   img {
     width: 100%;
-    height: 350px;
+    height: 400px;
 
     @media (max-width: 1240px) {
       height: 430px;

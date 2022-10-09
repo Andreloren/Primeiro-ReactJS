@@ -1,5 +1,4 @@
 import React from "react";
-import Rodape from "../cabecalho/Cabecalho";
 import RodapeStyleInicial from "../cabecalho/CabecalhoStyle";
 import RodapeStyleFinal from "./RodapeStyle";
 import SvgIcon from "@mui/icons-material/Monitor";

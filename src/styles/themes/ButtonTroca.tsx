@@ -4,10 +4,11 @@ import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import App from "../../App";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
-function MyApp() {
+export function MyApp() {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
   return (
@@ -15,6 +16,7 @@ function MyApp() {
       sx={{
         display: "flex",
         width: "100%",
+        height: "30px",
         alignItems: "center",
         justifyContent: "center",
         bgcolor: "background.default",
@@ -39,12 +41,12 @@ function MyApp() {
   );
 }
 
-export default function ToggleColorMode() {
-  const [mode, setMode] = React.useState<"light" | "dark">("light");
+export function ToggleColorMode() {
+  const [mode, setMode] = React.useState<"dark" | "light">("dark");
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+        setMode((prevMode) => (prevMode === "dark" ? "light" : "dark"));
       },
     }),
     []
@@ -64,6 +66,7 @@ export default function ToggleColorMode() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <MyApp />
+        <App />
       </ThemeProvider>
     </ColorModeContext.Provider>
   );

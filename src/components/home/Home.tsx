@@ -66,7 +66,7 @@ function Home() {
       />
       <Corpo
         lado="left"
-        alt="mobile"
+        alt="codigo"
         textoSpan="Lorem Ipsum"
         texto="Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Suscipit vitae labore pariatur
@@ -83,7 +83,7 @@ function Home() {
       />
       <Corpo
         lado="right"
-        alt="mobile"
+        alt="machine"
         textoSpan="Lorem Ipsum"
         texto="Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Suscipit vitae labore pariatur

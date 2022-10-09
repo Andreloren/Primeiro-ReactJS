@@ -1,11 +1,11 @@
+import { CssBaseline } from "@mui/material";
 import React from "react";
 import Home from "./components/home/Home";
-import Global from "./styles/Global";
 
 function App() {
   return (
     <div className="App">
-      <Global />
+      <CssBaseline />
       <Home />
     </div>
   );
