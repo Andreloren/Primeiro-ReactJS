@@ -5,6 +5,7 @@ import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import App from "../../App";
+import { Hidden } from "@mui/material";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -14,6 +15,7 @@ export function MyApp() {
   return (
     <Box
       sx={{
+        overflow: "Hidden",
         display: "flex",
         width: "100%",
         height: "30px",
